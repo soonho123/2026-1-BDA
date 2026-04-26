@@ -5,9 +5,9 @@
 - 주교재
   - 파이썬으로 배우는 데이터분석 입문, 강환수 저, 도서출판 홍릉
   - https://product.kyobobook.co.kr/detail/S000214156345
-  - <img width="458" height="629" alt="image" src="https://github.com/user-attachments/assets/6913e3ab-5ed9-422e-b36e-9453c16e2f4e" />
+  <img width="458" height="629" alt="image" src="https://github.com/user-attachments/assets/6913e3ab-5ed9-422e-b36e-9453c16e2f4e" />
 
-- 부교재
+- 보조교재
   - Do It 쉽게 배우는 파이썬 데이터분석, 김영우 저, 이지퍼블리싱 
 
 
