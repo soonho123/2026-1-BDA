@@ -143,11 +143,18 @@ def display_series_side_by_side(*args, names=None):
 
 
 ---
-## numpy code
+
+### numpy 소수 자릿 설정
 ```
 # NumPy 라이브러리를 불러오고, 배열 출력 형식을 보기 좋게 설정합니다.
 import numpy as np
 # suppress=True는 과학적 표기법(예: 1.23e-10)을 억제하고
 # 항상 고정 소수점 표기법(fixed point notation)을 사용
 np.set_printoptions(suppress=True, precision=4)
+```
+
+### pandas 소수 자릿 설정
+```Python
+pd.set_option('display.float_format', '{:.2f}'.format)  # 전역 적용
+pd.reset_option('display.float_format')                 # 초기화
 ```
