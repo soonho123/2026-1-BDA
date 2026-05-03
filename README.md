@@ -77,7 +77,7 @@
 ## 지도 시각화 수업 참조
 - [웹참조](https://pjh09050.tistory.com/11)
   
-## 가로로 데이터프레임 출력 함수
+## 가로로 여러 데이터프레임 출력 함수
 ```Python
 from IPython.display import display_html
 def display_side_by_side(*args):
@@ -87,6 +87,38 @@ def display_side_by_side(*args):
         html_str += df.to_html() + '&nbsp;'*4
     display_html(html_str.replace('table','table style="display:inline"'), raw=True)
 ```
+
+## 가로로 여러 시리즈 출력 함수
+```Python
+from IPython.display import display_html
+
+def display_series_side_by_side(*args, names=None):
+    """여러 Series를 옆으로 나란히 표시한다.
+    
+    Parameters
+    ----------
+    *args   : pd.Series 객체들
+    names   : 각 Series의 제목 리스트 (생략 시 Series.name 사용)
+    """
+    html_str = ''
+    for i, s in enumerate(args):
+        # 제목 결정: names 인자 > Series.name > 인덱스 번호
+        if names and i < len(names):
+            title = names[i]
+        elif s.name is not None:
+            title = s.name
+        else:
+            title = f'Series {i}'
+        
+        table_html = s.to_frame(name=title).to_html()
+        html_str += table_html + '&nbsp;' * 4
+
+    display_html(
+        html_str.replace('table', 'table style="display:inline; vertical-align:top"'),
+        raw=True
+    )```
+
+
 ## Google Colab 셀 복사 및 붙여넣기 단축키
 
 - 🔹 셀 복사 & 붙여넣기 단축키
