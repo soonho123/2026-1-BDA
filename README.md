@@ -116,8 +116,8 @@ def display_series_side_by_side(*args, names=None):
     display_html(
         html_str.replace('table', 'table style="display:inline; vertical-align:top"'),
         raw=True
-    )```
-
+    )
+```
 
 ## Google Colab 셀 복사 및 붙여넣기 단축키
 
