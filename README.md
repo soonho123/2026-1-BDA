@@ -37,9 +37,9 @@
 - [A반(QA) 수요일 오전](https://docs.google.com/spreadsheets/d/1D6ayWWOMeVnYbkdMYzPTb6pRjdNcvLFk4VPmn_ylpus/edit?usp=sharing)
 - [B반(QB) 수요일 오후](https://docs.google.com/spreadsheets/d/1eSEnDMEoiSUiUgyeKz_xyt1tmn8EPJ3cRPKXZdKE7i4/edit?usp=sharing)
 
-## 시험 일정
+## 시험 일정과 점수
 - 중간고사
-  - QA 2026/4/22수 오전 11:00 ~ 11:50 6-406호
+  - [QA 2026/4/22수 오전 11:00 ~ 11:50 6-406호](https://claude.ai/artifacts/latest/3c19a0fb-ec76-4a1c-b993-26b5f3806dcc)
   - QB 2026/4/22수 오후 14:00 ~ 14:50 6-406호
 - 기말고사
   - QA 2026/6/17수 오후 12:00 ~ 12:50 
